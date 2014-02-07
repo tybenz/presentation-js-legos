@@ -1,0 +1,55 @@
+- A note about slides/vimdeck
+  - Link to slides
+
+- Intro
+  - Who I am - links
+    - Name
+    - I work at Adobe
+    - jQuery Mobile
+  - Why I'm here
+    - WebPro
+  - What I'm talking about
+    - Overview
+    - UI patterns: identify, and abstract
+    - Decoupling HTML, CSS, and JS
+    - Best practices for reusable Javascript
+    - Disclaimer
+      - Writing custom components is time-consuming
+      - We'll cover what to look for if you don't have time
+
+- UI Patterns
+  - Understanding what makes up parts of user interface
+  - Once you grab this, you can make abstractions that will impact code organization
+  - Examples: Slider, Number Spinner, Tabs, Accordion, Radial Menu (_browser_)
+  - *Code* for tabs
+  - *Code* for radial menu
+
+- The need to decouple
+  - Separation of concerns
+  - HTML is structure
+  - CSS is style
+  - JS is interaction/behavior
+  - Style happens only in CSS classes
+  - Animation in CSS only
+  - JS can be independent of structure
+  - Simple *code* example showing separation
+
+- The JS
+  - Options
+    - Loads of em!
+    - Behavior
+    - Class Names
+    - Selectors
+  - Events: communications -> extension
+  - *Code* sample with options, and events (_browser_)
+  - Second *code* sample using options (_browser_)
+  - Third *code* sample using events (_browser_)
+  - Inheritance
+    - Take advantage of patterns
+    - Provide basic initialization
+
+- Closing
+  - Git repo of samples/library
+    - For messing with only
+  - Hit me up on twitter if you have any questions
+  - Thanks!

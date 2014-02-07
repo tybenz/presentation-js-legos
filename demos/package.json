@@ -1,0 +1,10 @@
+{
+  "name": "radial-menu",
+  "description": "Radial Menu",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-shell": "latest"
+  }
+}

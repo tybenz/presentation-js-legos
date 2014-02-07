@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm -Rf presentation/*
+
+vimdeck generate slides.md
+
+cp mine/jquery.md presentation/slide004.md
+cp mine/adobe.md presentation/slide003.md
+
+cat mine/script.vim > /tmp/script.vim
+cat presentation/script.vim >> /tmp/script.vim
+cp /tmp/script.vim presentation/script.vim
+
+vimdeck open

@@ -1,0 +1,235 @@
+@import 'bourbon/bourbon';
+
+$grey: #E0E0E0;
+$white: #FFFFFF;
+$blue: #2ABCFF;
+
+@mixin font {
+  font-family: open-sans, sans-serif;
+  font-weight: 100;
+}
+
+@mixin condensed-font {
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 100;
+}
+
+@mixin bold-font {
+  font-family: open-sans, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  color: #505050;
+  @include font();
+  padding: 5% 20%;
+
+  * {
+    @include box-sizing(border-box);
+  }
+}
+
+.title {
+  margin-bottom: 5%;
+  span {
+    @include font();
+  }
+}
+
+.radial-menu {
+  @include condensed-font();
+  border-radius: 215px;
+  width: 430px;
+  height: 430px;
+  background: $grey;
+  position: relative;
+  overflow: hidden;
+}
+
+.radial-menu-inner {
+  padding: 70px 0;
+  text-align: center;
+  line-height: 1.6em;
+  border-radius: 125px;
+  width: 250px;
+  height: 250px;
+  background: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translateX(-50%) translateY(-50%));
+}
+
+.radial-menu-panel {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.radial-menu-selector {
+  @include transition-property(transform);
+  @include transition-duration(1s);
+  @include transform(rotate(22.5deg));
+  border-radius: 215px;
+  width: 430px;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+
+  .radial-menu-selector-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -90px;
+  }
+
+  .radial-menu-selector-inner {
+    width: 0;
+    height: 0;
+    border-width: 90px;
+    border-style: solid;
+    border-color: $blue transparent transparent transparent;
+    @include transform-origin(50% 50%);
+    @include transform(scaleY(2.42));
+  }
+}
+
+.radial-menu-options {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .radial-menu-option {
+    position: absolute;
+    width: 138px;
+    height: 138px;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      &[href="#bluetooth"] {
+        background-image: url(../img/bluetooth.png);
+      }
+
+      &[href="#location"] {
+        background-image: url(../img/location.png);
+      }
+
+      &[href="#volume"] {
+        background-image: url(../img/volume.png);
+      }
+
+      &[href="#brightness"] {
+        background-image: url(../img/brightness.png);
+      }
+
+      &[href="#phone"] {
+        background-image: url(../img/phone.png);
+      }
+
+      &[href="#messages"] {
+        background-image: url(../img/messages.png);
+      }
+
+      &[href="#wifi"] {
+        background-image: url(../img/wifi.png);
+      }
+
+      &[href="#airplane"] {
+        background-image: url(../img/airplane.png);
+      }
+
+      &.active {
+        &[href="#bluetooth"] {
+          background-image: url(../img/bluetooth-white.png);
+        }
+
+        &[href="#location"] {
+          background-image: url(../img/location-white.png);
+        }
+
+        &[href="#volume"] {
+          background-image: url(../img/volume-white.png);
+        }
+
+        &[href="#brightness"] {
+          background-image: url(../img/brightness-white.png);
+        }
+
+        &[href="#phone"] {
+          background-image: url(../img/phone-white.png);
+        }
+
+        &[href="#messages"] {
+          background-image: url(../img/messages-white.png);
+        }
+
+        &[href="#wifi"] {
+          background-image: url(../img/wifi-white.png);
+        }
+
+        &[href="#airplane"] {
+          background-image: url(../img/airplane-white.png);
+        }
+      }
+    }
+  }
+
+  #option-1 {
+    top: -7px;
+    left: 215px;
+  }
+
+  #option-2 {
+    top: 84px;
+    left: 300px;
+  }
+
+  #option-3 {
+    top: 212px;
+    left: 300px;
+  }
+
+  #option-4 {
+    top: 302px;
+    left: 215px;
+  }
+
+  #option-5 {
+    top: 302px;
+    left: 77px;
+  }
+
+  #option-6 {
+    top: 212px;
+    left: -8px;
+  }
+
+  #option-7 {
+    top: 84px;
+    left: -8px;
+  }
+
+  #option-8 {
+    top: -7px;
+    left: 77px;
+  }
+}
+
+.attribution {
+  font-size: 0.9em;
+  margin-top: 10%;
+}

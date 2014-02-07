@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Radial Menu Demo</title>
+    <script src="//use.edgefonts.net/open-sans:n3,n7;open-sans-condensed:n3.js"></script>
+    <link rel="stylesheet" href="css/radial.css" type="text/css" />
+</head>
+<body>
+  <h1 class="title">Concept Idea: <span>Radial Menu UI</span></h1>
+  <div class="radial-menu">
+    <div class="radial-menu-selector"><div class="radial-menu-selector-position"><div class="radial-menu-selector-inner"></div></div></div>
+    <div class="radial-menu-inner">
+      <div data-id="default-panel" class="radial-menu-panel">
+        <div class="radial-menu-icon"><img src="img/settings-large.png" alt=""></div>
+        <div class="radial-menu-title">
+          System Settings
+        </div>
+        <div class="radial-menu-subtitle">
+          Radial Menu
+        </div>
+      </div>
+      <div data-id="wifi" class="radial-menu-panel">
+        <div class="radial-menu-icon"><img src="img/wifi-large.png" alt=""></div>
+        <div class="radial-menu-title">
+          Wifi: On
+        </div>
+        <div class="radial-menu-subtitle">
+          Current Network: jQuery
+        </div>
+      </div>
+      <div data-id="volume" class="radial-menu-panel active">
+        <div class="radial-menu-icon"><img src="img/volume-large.png" alt=""></div>
+        <div class="radial-menu-title">
+          Volume
+        </div>
+        <div class="radial-menu-subtitle">
+          62%
+        </div>
+      </div>
+    </div>
+    <div class="radial-menu-loading"></div>
+    <ul class="radial-menu-options">
+      <li class="radial-menu-option" id="option-1"><a href="#bluetooth"> </a></li>
+      <li class="radial-menu-option" id="option-2"><a href="#location"> </a></li>
+      <li class="radial-menu-option" id="option-3"><a href="#volume"> </a></li>
+      <li class="radial-menu-option" id="option-4"><a href="#brightness"> </a></li>
+      <li class="radial-menu-option" id="option-5"><a href="#phone"> </a></li>
+      <li class="radial-menu-option" id="option-6"><a href="#messages"> </a></li>
+      <li class="radial-menu-option" id="option-7"><a href="#wifi"> </a></li>
+      <li class="radial-menu-option" id="option-8"><a href="#airplane"> </a></li>
+    </ul>
+    <div class="radial-menu-settings">
+      <div class="radial-menu-setting" data-id="volume">
+      </div>
+    </div>
+  </div>
+  <div class="attribution">dribble.com/retrogradestudio</div>
+  <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/lego.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/radio-group.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/panel-group.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/radial.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/drag-tracker.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/draggable.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    var radial = new Lego.RadialMenu( '.radial-menu', {
+      optionsCount: 8,
+      initialOption: 2
+    });
+
+    //var dt = new Lego.DragTracker( '.attribution', {
+    //  dragStart: function ( dt, dx, dy ) {
+    //    console.log(dx,dy);
+    //  },
+    //  dragUpdate: function ( dt, dx, dy ) {
+    //    console.log(dx,dy);
+    //  }
+    //});
+  </script>
+</body>
+</html>

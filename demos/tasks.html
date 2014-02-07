@@ -1,0 +1,55 @@
+<div class="task-list">
+  <div class="task"><input type="checkbox" name="groceries"> Groceries</div>
+  <div class="task"><input type="checkbox" name="homework"> Homework</div>
+  <div class="task"><input type="checkbox" name="write_code"> Write Code</div>
+</div>
+
+<style>
+  /* CSS */
+body {
+  font: 150% Helvetica, Arial, sans-serif;
+}
+
+.task {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.task.complete {
+  -webkit-animation: fadeOut 1s ease-out;
+  -moz-animation: fadeOut 1s ease-out;
+  -ms-animation: fadeOut 1s ease-out;
+  -o-animation: fadeOut 1s ease-out;
+  animation: fadeOut 1s ease-out;
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1; height: auto; margin-bottom: 10px;padding:10px;}
+  20% { opacity: 0; height: auto; margin-bottom: 10px; padding:10px;}
+  100% { opacity: 0; height: 0; margin-bottom: 0px;}
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { height: 0; margin-bottom: 0px;}
+}
+</style>
+
+<script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+  // JavaScript
+$( '.task input' ).on( 'change', function () {
+  if ( this.checked ) {
+    var $task = $( this ).parent();
+
+    $task.addClass( 'complete' );
+  }
+});
+</script>

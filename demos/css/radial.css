@@ -1,0 +1,207 @@
+body {
+  color: #505050;
+  font-family: open-sans, sans-serif;
+  font-weight: 100;
+  padding: 5% 20%;
+}
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-bottom: 5%;
+}
+.title span {
+  font-family: open-sans, sans-serif;
+  font-weight: 100;
+}
+
+.radial-menu {
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 100;
+  border-radius: 215px;
+  width: 430px;
+  height: 430px;
+  background: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.radial-menu-inner {
+  padding: 70px 0;
+  text-align: center;
+  line-height: 1.6em;
+  border-radius: 125px;
+  width: 250px;
+  height: 250px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.radial-menu-panel {
+  display: none;
+}
+.radial-menu-panel.active {
+  display: block;
+}
+
+.radial-menu-selector {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  -o-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+  border-radius: 215px;
+  width: 430px;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+}
+.radial-menu-selector .radial-menu-selector-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -90px;
+  margin-left: -90px;
+}
+.radial-menu-selector .radial-menu-selector-inner {
+  width: 0;
+  height: 0;
+  border-width: 90px;
+  border-style: solid;
+  border-color: #2abcff transparent transparent transparent;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scaleY(2.42);
+  -moz-transform: scaleY(2.42);
+  -ms-transform: scaleY(2.42);
+  -o-transform: scaleY(2.42);
+  transform: scaleY(2.42);
+}
+
+.radial-menu-options {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.radial-menu-options .radial-menu-option {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+}
+.radial-menu-options .radial-menu-option a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.radial-menu-options .radial-menu-option a[href="#bluetooth"] {
+  background-image: url(../img/bluetooth.png);
+}
+.radial-menu-options .radial-menu-option a[href="#location"] {
+  background-image: url(../img/location.png);
+}
+.radial-menu-options .radial-menu-option a[href="#volume"] {
+  background-image: url(../img/volume.png);
+}
+.radial-menu-options .radial-menu-option a[href="#brightness"] {
+  background-image: url(../img/brightness.png);
+}
+.radial-menu-options .radial-menu-option a[href="#phone"] {
+  background-image: url(../img/phone.png);
+}
+.radial-menu-options .radial-menu-option a[href="#messages"] {
+  background-image: url(../img/messages.png);
+}
+.radial-menu-options .radial-menu-option a[href="#wifi"] {
+  background-image: url(../img/wifi.png);
+}
+.radial-menu-options .radial-menu-option a[href="#airplane"] {
+  background-image: url(../img/airplane.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#bluetooth"] {
+  background-image: url(../img/bluetooth-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#location"] {
+  background-image: url(../img/location-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#volume"] {
+  background-image: url(../img/volume-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#brightness"] {
+  background-image: url(../img/brightness-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#phone"] {
+  background-image: url(../img/phone-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#messages"] {
+  background-image: url(../img/messages-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#wifi"] {
+  background-image: url(../img/wifi-white.png);
+}
+.radial-menu-options .radial-menu-option a.active[href="#airplane"] {
+  background-image: url(../img/airplane-white.png);
+}
+.radial-menu-options #option-1 {
+  top: -7px;
+  left: 215px;
+}
+.radial-menu-options #option-2 {
+  top: 84px;
+  left: 300px;
+}
+.radial-menu-options #option-3 {
+  top: 212px;
+  left: 300px;
+}
+.radial-menu-options #option-4 {
+  top: 302px;
+  left: 215px;
+}
+.radial-menu-options #option-5 {
+  top: 302px;
+  left: 77px;
+}
+.radial-menu-options #option-6 {
+  top: 212px;
+  left: -8px;
+}
+.radial-menu-options #option-7 {
+  top: 84px;
+  left: -8px;
+}
+.radial-menu-options #option-8 {
+  top: -7px;
+  left: 77px;
+}
+
+.attribution {
+  font-size: 0.9em;
+  margin-top: 10%;
+}
