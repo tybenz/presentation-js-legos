@@ -162,8 +162,8 @@ body {
   box-shadow: none; }
   .reveal pre code {
     font-family: 'Ubuntu Mono', monospace;
-    max-height: 700px;
-    font-size: 28px;
+    max-height: 800px;
+    font-size: 24px;
     line-height: 1.2em; }
 
 .reveal del {
