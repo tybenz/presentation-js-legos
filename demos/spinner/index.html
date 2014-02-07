@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lego.js Examples</title>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="numeric-spinner-wrapper">
+    <div class="buttons">
+      <a href="#" class="button up">&#x25B2;</a>
+      <a href="#" class="button down">&#x25BC;</a>
+    </div>
+    <input class="numeric-spinner" value="0" size="5">
+  </div>
+  <script type="text/javascript" charset="utf-8" src="lego.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    var ns = new Lego.NumericSpinner( '.numeric-spinner-wrapper', {
+      inputSelector: '.numeric-spinner'
+    });
+
+    function activate() {
+      $( '.numeric-spinner-wrapper' ).addClass( 'active' );
+    }
+
+    function deactivate() {
+      $( '.numeric-spinner-wrapper' ).removeClass( 'active' );
+    }
+
+    $( '.numeric-spinner-wrapper' ).on( 'focus', 'input', activate );
+    $( '.numeric-spinner-wrapper' ).on( 'blur', 'input', deactivate );
+  </script>
+</body>
+</html>

@@ -5,3 +5,6 @@ color github
 
 call matchadd("VisualNOS", "(\\(\\_.*slide 004\\)\\@=")
 call matchadd("Error", "_\\(\\_.*slide 003\\)\\@=")
+
+
+noremap <leader>q :qall!<CR>

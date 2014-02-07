@@ -1,0 +1,61 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 1em;
+}
+
+a {
+  color: inherit;
+}
+
+.numeric-spinner-wrapper {
+  font-size: 3em;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transition: box-shadow 0.2s linear;
+  box-shadow: none;
+}
+
+.numeric-spinner-wrapper.active {
+  box-shadow: 0 0 10px 1px #0af;
+}
+
+.numeric-spinner-wrapper > * {
+  float: left;
+}
+
+.numeric-spinner-wrapper .button {
+  display: block;
+  padding: 0.725em 1.625em;
+  font-size: 0.4em;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.numeric-spinner-wrapper .button:last-child {
+  margin-top: -1px;
+}
+
+.numeric-spinner-wrapper input {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 1px solid black;
+  margin: 0;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-left: -1px;
+  outline: none;
+}
