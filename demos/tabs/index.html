@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lego.js Examples</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="tabs-wrapper">
+    <h1>Tabs</h1>
+    <ul class="tabs">
+      <li><a href="#panel1" class="active">Tab 1</a></li>
+      <li><a href="#panel2">Tab 2</a></li>
+      <li><a href="#panel3">Tab 3</a></li>
+    </ul>
+    <div class="panels">
+      <div class="panel active" data-id="panel1">
+        <p>Facilisis turpis. Etiam pellentesque quam et erat. Praesent suscipit
+          justo.</p>
+
+        <p>Cras nec metus pulvinar sem tempor hendrerit. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in
+          nulla. Mauris elementum. Curabitur tempor, quam ac rutrum placerat, nunc
+          augue ullamcorper est, vitae molestie neque nunc a nunc. Integer.</p>
+      </div>
+      <div class="panel" data-id="panel2">
+        <p>Sagittis dignissim eros. In sit amet lectus. Fusce lacinia mauris vitae nisl
+          interdum condimentum. Etiam in magna ac nibh ultrices vehicula. Maecenas
+          commodo facilisis lectus. Praesent sed mi. Phasellus ipsum. Donec quis tellus
+          id lectus faucibus molestie. Praesent vel ligula. Nam venenatis neque quis
+          mauris. Proin felis. Cum sociis natoque penatibus.</p>
+      </div>
+      <div class="panel" data-id="panel3">
+        <p>Dolor at sapien. Aenean viverra justo ac sem.</p>
+
+        <p>Pellentesque at dolor non lectus sagittis semper. Donec quis mi. Duis eget
+          pede. Phasellus arcu tellus, ultricies id, consequat id, lobortis nec, diam.
+          Suspendisse sed nunc. Pellentesque id magna. Morbi interdum quam at est.
+          Maecenas eleifend mi in urna. Praesent et lectus ac nibh.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-wrapper">
+    <h1>Accordion</h1>
+    <div class="accordion-panels">
+      <a href="#panel4" class="accordion-tab active">Tab 1</a>
+      <div class="accordion-panel active" data-id="panel4">
+        <p>Facilisis turpis. Etiam pellentesque quam et erat. Praesent suscipit
+          justo.</p>
+
+        <p>Cras nec metus pulvinar sem tempor hendrerit. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in
+          nulla. Mauris elementum. Curabitur tempor, quam ac rutrum placerat, nunc
+          augue ullamcorper est, vitae molestie neque nunc a nunc. Integer.</p>
+      </div>
+      <a href="#panel5" class="accordion-tab">Tab 2</a>
+      <div class="accordion-panel" data-id="panel5">
+        <p>Sagittis dignissim eros. In sit amet lectus. Fusce lacinia mauris vitae nisl
+          interdum condimentum. Etiam in magna ac nibh ultrices vehicula. Maecenas
+          commodo facilisis lectus. Praesent sed mi. Phasellus ipsum. Donec quis tellus
+          id lectus faucibus molestie. Praesent vel ligula. Nam venenatis neque quis
+          mauris. Proin felis. Cum sociis natoque penatibus.</p>
+      </div>
+      <a href="#panel6" class="accordion-tab">Tab 3</a>
+      <div class="accordion-panel" data-id="panel6">
+        <p>Dolor at sapien. Aenean viverra justo ac sem.</p>
+
+        <p>Pellentesque at dolor non lectus sagittis semper. Donec quis mi. Duis eget
+          pede. Phasellus arcu tellus, ultricies id, consequat id, lobortis nec, diam.
+          Suspendisse sed nunc. Pellentesque id magna. Morbi interdum quam at est.
+          Maecenas eleifend mi in urna. Praesent et lectus ac nibh.</p>
+      </div>
+    </div>
+  </div>
+  <div class="slideshow-wrapper">
+    <h1>Slideshow</h1>
+    <div id="slideshow-1" class="slideshow">
+      <div class="thumb-container">
+        <a href="#slide-1" class="slideshow-slide-link thumb-1 active">1</a>
+        <a href="#slide-2" class="slideshow-slide-link thumb-2">2</a>
+        <a href="#slide-3" class="slideshow-slide-link thumb-3">3</a>
+        <a href="#slide-4" class="slideshow-slide-link thumb-4">4</a>
+        <a href="#slide-5" class="slideshow-slide-link thumb-5">5</a>
+      </div>
+      <div class="slideshow-clip">
+        <div class="slideshow-view">
+          <div class="slideshow-slide slide-1 active" data-id="slide-1">1</div>
+          <div class="slideshow-slide slide-2" data-id="slide-2">2</div>
+          <div class="slideshow-slide slide-3" data-id="slide-3">3</div>
+          <div class="slideshow-slide slide-4" data-id="slide-4">4</div>
+          <div class="slideshow-slide slide-5" data-id="slide-5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="control-panel">
+      <div class="controls">
+        <a href="#" class="slideshow-play-btn fa fa-play"></a>
+        <a href="#" class="slideshow-stop-btn fa fa-stop"></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8" src="../spinner/lego.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="slideshow.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    var tg = new Lego.RadioGroup( '.tabs a' );
+    var pg = new Lego.PanelGroup( '.panel', {
+      tabGroups: [ tg ]
+    });
+
+    var tg = new Lego.RadioGroup( '.accordion-tab' );
+    var pg = new Lego.PanelGroup( '.accordion-panel', {
+      tabGroups: [ tg ]
+    });
+
+    var ss = new Lego.Slideshow( '.slideshow-wrapper' );
+    // var ss = new Lego.SlideShow( "#slideshow-1", {
+    //   autoPlay: true
+    // });
+  </script>
+</body>
+</html>
