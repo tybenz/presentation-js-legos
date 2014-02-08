@@ -140,5 +140,6 @@ pre .keyword {
 .hilight .css .hexcolor,
 .hilight .function, .hilight .python .decorator, .hilight .python .title, .hilight .ruby .function .title, .hilight .ruby .title .keyword, .hilight .perl .sub, .hilight .javascript .title, .hilight .coffeescript .title,
 .hilight .keyword, .hilight .javascript .function, .hilight {
+  display: inline;
   color: #ddd !important;
 }

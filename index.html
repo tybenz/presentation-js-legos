@@ -74,8 +74,8 @@
           $( "pre" ).html(function( i, string ) {
             // replace the hilight markers with spans
             return string
-            .replace(/\{~+/g, "<span class='hilight'>" )
-              .replace(/~+\}/g, "</span>" );
+            .replace(/\{\~/g, "<div class='hilight'>" )
+              .replace(/\~\}/g, "</div>" );
           });
         }},
         { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },

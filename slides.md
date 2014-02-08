@@ -7,7 +7,7 @@
 
 # TYLER BENZIGER
 
-github.com/tybenz // @tybenz // tybenz.com
+github.com/tybenz || @tybenz || tybenz.com
 
 
 # ADOBE
@@ -1097,17 +1097,6 @@ github.com/tybenz/lego.js
 ```
 
 
-# TYLER BENZIGER
-
-{~github.com/tybenz //~} @tybenz {~// tybenz.com~}
-
-
-# TYLER BENZIGER
-
-github.com/tybenz // @tybenz // tybenz.com
-
-
 # THANKS!
 
-
-# THANKS!
+github.com/tybenz || @tybenz || tybenz.com
