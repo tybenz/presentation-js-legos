@@ -1,8 +1,8 @@
-# JS LEGOS :
+# JS LEGOS
 
-## REUSABLE  UI  PATTERNS
-
-## IN  JAVASCRIPT
+```markdown
+    REUSABLE UI COMPONENTS IN JAVASCRIPT
+```
 
 
 # TYLER BENZIGER
@@ -16,29 +16,32 @@ github.com/tybenz // @tybenz // tybenz.com
 # JQUERY
 
 
-# WHAT WE'LL COVER
-
-• Decoupling HTML, CSS, and JS{~
-
-• UI Patterns
-
-• The JavaScript~}
+# WEB PRO
 
 
 # WHAT WE'LL COVER
-
-{~• Decoupling HTML, CSS, and JS~}
 
 • UI Patterns{~
 
+• Decoupling HTML, CSS, and JS
+
 • The JavaScript~}
 
 
 # WHAT WE'LL COVER
 
-{~• Decoupling HTML, CSS, and JS
+{~• UI Patterns~}
 
-• UI Patterns~}
+• Decoupling HTML, CSS, and JS{~
+
+• The JavaScript~}
+
+
+# WHAT WE'LL COVER
+
+{~• UI Patterns
+
+• Decoupling HTML, CSS, and JS~}
 
 • The JavaScript
 
@@ -728,6 +731,37 @@ var Secret = Lego.extend({
 ```javascript
 
  
+{~var Secret = Lego.extend({~}
+    defaultOptions: {
+        applyClass: 'show',
+        applyEvent: 'mousedown',
+        removeEvent: 'mouseup'
+    }{~,
+
+    init: function ( el, options ) {
+        this._super( el, options );
+
+        this.$el.on( this.options.applyEvent, function () {
+            self.apply();
+            self.trigger( 'secret-apply' );
+        });
+
+        this.$el.on( this.options.removeEvent, function () {
+            self.remove();
+            self.trigger( 'secret-remove' );
+        });
+    },
+
+    apply: function () { this.$el.addClass( this.options.applyClass ); },
+
+    remove: function () { this.$el.addClass( this.options.removeClass ); }
+});~}
+```
+
+
+```javascript
+
+ 
 {~var Secret = Lego.extend({
     defaultOptions: {
         applyClass: 'show',
@@ -1071,6 +1105,9 @@ github.com/tybenz/lego.js
 # TYLER BENZIGER
 
 github.com/tybenz // @tybenz // tybenz.com
+
+
+# THANKS!
 
 
 # THANKS!
