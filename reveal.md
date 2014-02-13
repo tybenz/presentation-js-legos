@@ -998,3 +998,20 @@ github.com/tybenz/lego.js
 github.com/tybenz&nbsp;&nbsp;&#8226;&nbsp;&nbsp;@tybenz
 
 tybenz@adobe.com&nbsp;&nbsp;&#8226;&nbsp;&nbsp;tybenz.com
+
+
+## EXAMPLES
+
+[Numeric Spinner](http://tybenz.com/presentation-js-legos/demos/spinner)
+
+[Tabs == Accordion == Slideshow](http://tybenz.com/presentation-js-legos/demos/tabs)
+
+[Task List](http://tybenz.com/presentation-js-legos/demos/tasks)
+
+[Secret Component](http://tybenz.com/demos/legos/secret.html)
+
+[Master Slave Secret Component](http://tybenz.com/demos/legos/secret4.html)
+
+[Animated GIF Scrubber](http://tybenz.com/demos/legos/secret5.html)
+
+[Animated GIF Scrubber (Debug)](http://tybenz.com/demos/legos/secret5.html?debug=true)
