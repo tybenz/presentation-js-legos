@@ -7,7 +7,7 @@
 
 # TYLER BENZIGER
 
-github.com/tybenz || @tybenz || tybenz.com
+tybenz@adobe.com || @tybenz || github.com/tybenz || tybenz.com
 
 
 # ADOBE
@@ -1099,4 +1099,4 @@ github.com/tybenz/lego.js
 
 # THANKS!
 
-github.com/tybenz || @tybenz || tybenz.com
+tybenz@adobe.com || @tybenz || github.com/tybenz || tybenz.com

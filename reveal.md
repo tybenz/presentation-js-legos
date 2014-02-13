@@ -5,7 +5,9 @@
 
 ## TYLER BENZIGER
 
-github.com/tybenz&nbsp;&nbsp;||&nbsp;&nbsp;@tybenz&nbsp;&nbsp;||&nbsp;&nbsp;tybenz.com
+github.com/tybenz&nbsp;&nbsp;&#8226;&nbsp;&nbsp;@tybenz
+
+tybenz@adobe.com&nbsp;&nbsp;&#8226;&nbsp;&nbsp;tybenz.com
 
 
 # ![](http://awes0.me/adobe.png)
@@ -443,6 +445,7 @@ $( '.task input[type=checkbox]' ).on( 'change', function () {
 
 
 ```javascript
+// Class stuff: http://ejohn.org/blog/simple-javascript-inheritance/
 var Lego = Class.extend({
     defaultOptions: {},
 
@@ -464,6 +467,7 @@ var Lego = Class.extend({
 
 
 ```javascript
+// Class stuff: http://ejohn.org/blog/simple-javascript-inheritance/
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -485,6 +489,7 @@ var Lego = Class.extend({
 
 
 ```javascript
+// Class stuff: http://ejohn.org/blog/simple-javascript-inheritance/
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -506,6 +511,7 @@ var Lego = Class.extend({
 
 
 ```javascript
+// Class stuff: http://ejohn.org/blog/simple-javascript-inheritance/
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -527,6 +533,7 @@ var Lego = Class.extend({
 
 
 ```javascript
+// Class stuff: http://ejohn.org/blog/simple-javascript-inheritance/
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -548,6 +555,7 @@ var Lego = Class.extend({
 
 
 ```javascript
+// Class stuff: http://ejohn.org/blog/simple-javascript-inheritance/
 var Lego = Class.extend({
     defaultOptions: {},
 
@@ -987,4 +995,6 @@ github.com/tybenz/lego.js
 
 # THANKS!
 
-github.com/tybenz&nbsp;&nbsp;||&nbsp;&nbsp;@tybenz&nbsp;&nbsp;||&nbsp;&nbsp;tybenz.com
+github.com/tybenz&nbsp;&nbsp;&#8226;&nbsp;&nbsp;@tybenz
+
+tybenz@adobe.com&nbsp;&nbsp;&#8226;&nbsp;&nbsp;tybenz.com
