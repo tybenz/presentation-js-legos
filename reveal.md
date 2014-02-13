@@ -20,25 +20,7 @@ tybenz@adobe.com&nbsp;&nbsp;&#8226;&nbsp;&nbsp;tybenz.com
 
 UI Patterns
 
-~~Decoupling HTML, CSS, and JS~~
-
-~~The JavaScript~~
-
-
-## WHAT WE'LL COVER
-
-~~UI Patterns~~
-
 Decoupling HTML, CSS, and JS
-
-~~The JavaScript~~
-
-
-## WHAT WE'LL COVER
-
-~~UI Patterns~~
-
-~~Decoupling HTML, CSS, and JS~~
 
 The JavaScript
 
