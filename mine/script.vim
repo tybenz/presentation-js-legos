@@ -8,3 +8,4 @@ call matchadd("Error", "_\\(\\_.*slide 003\\)\\@=")
 
 
 noremap <leader>q :qall!<CR>
+set nocursorline!
