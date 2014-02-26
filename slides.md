@@ -10,6 +10,14 @@
 tybenz@adobe.com || @tybenz || github.com/tybenz || tybenz.com
 
 
+# VIMDECK
+
+
+# SPAMTHE.NET
+
+\#spamthenet || @spamthenet || spamthe.net || weekly@spamthe.net
+
+
 # ADOBE
 
 
@@ -494,6 +502,516 @@ $( '.task input[type=checkbox]' ).on( 'change', function () {
 ```
 
 
+# EXAMPLE TIME
+
+
+# BLACK BOX
+
+
+```javascript
+
+ 
+$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();
+```
+
+
+```javascript
+
+ 
+$.fn.secret{~ = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+
+ 
+{~$.fn.secret = function () {
+    ~}this.on{~(~} 'mousedown'{~, function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+
+ 
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        ~}$( this ).addClass( 'show' );{~
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+
+ 
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });~}
+
+    this.on{~(~} 'mouseup'{~, function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+
+ 
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        ~}$( this ).removeClass( 'show' );{~
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+
+ 
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};~}
+
+$( '.secret' ).secret();
+```
+
+
+```javascript
+
+ 
+$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();
+```
+
+
+# PROS vs CONS
+
+```markdown
+{~1. Modular                               1. Basic
+
+                                         2. User ignorance~}
+```
+
+
+# PROS vs CONS
+
+```markdown
+1. Modular{~                               1. Basic
+
+                                         2. User ignorance~}
+```
+
+
+# PROS vs CONS
+
+```markdown
+1. Modular                               1. Basic{~
+
+                                         2. User ignorance~}
+```
+
+
+# PROS vs CONS
+
+```markdown
+1. Modular                               1. Basic
+
+                                         2. User ignorance
+```
+
+
+# FRAMEWORK BASED
+
+
+```javascript
+
+ 
+var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();
+```
+
+
+```javascript
+
+ 
+{~var Secret =~} Backbone.View.extend{~({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    ~}el: '.secret'{~,
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    el: '.secret',~}
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    }{~,
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        ~}this.$el.addClass( 'show' );{~
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );~}
+        this.trigger( 'apply' );{~
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        ~}this.$el.removeClass( 'show' ); {~
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        ~}this.trigger( 'remove' );{~
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+
+ 
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});~}
+
+var secret = new Secret();
+```
+
+
+```javascript
+
+ 
+var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();
+```
+
+
+# PROS vs CONS
+
+```markdown
+{~1. Event-driven                          1. Backbone-dependent
+
+2. Cleanly organized~}
+```
+
+
+# PROS vs CONS
+
+```markdown
+1. Event-driven{~                          1. Backbone-dependent~}
+
+{~2. Cleanly organized~}
+```
+
+
+# PROS vs CONS
+
+```markdown
+1. Event-driven                          {~1. Backbone-dependent~}
+
+2. Cleanly organized
+```
+
+
+# PROS vs CONS
+
+```markdown
+1. Event-driven                          1. Backbone-dependent
+
+2. Cleanly organized
+```
+
+
+# PROS
+
+```markdown
+1. Event-driven
+
+2. Cleanly organized
+```
+
+
+# PROS
+
+```markdown
+1. Event-driven
+
+2. Cleanly organized
+
+3. Modular
+```
+
+
+# PROS
+
+```markdown
+1. Event-driven
+
+2. Cleanly organized
+
+3. Modular
+
+4. Flexible/customizable
+```
+
+
 # OPTIONS + EVENTS
 
 
@@ -502,6 +1020,7 @@ $( '.task input[type=checkbox]' ).on( 'change', function () {
 
 ```javascript
 
+ 
 var Lego = Class.extend({
     defaultOptions: {},
 
@@ -524,6 +1043,7 @@ var Lego = Class.extend({
 
 ```javascript
 
+ 
 {~var Lego = Class.extend({
     defaultOptions: {},~}
 
@@ -546,6 +1066,7 @@ var Lego = Class.extend({
 
 ```javascript
 
+ 
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -568,6 +1089,7 @@ var Lego = Class.extend({
 
 ```javascript
 
+ 
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -590,6 +1112,7 @@ var Lego = Class.extend({
 
 ```javascript
 
+ 
 {~var Lego = Class.extend({
     defaultOptions: {},
 
@@ -612,6 +1135,7 @@ var Lego = Class.extend({
 
 ```javascript
 
+ 
 var Lego = Class.extend({
     defaultOptions: {},
 
@@ -661,7 +1185,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });
 ```
 
@@ -692,7 +1216,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -723,7 +1247,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -754,7 +1278,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -785,7 +1309,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -816,7 +1340,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); }{~,
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -847,7 +1371,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -878,7 +1402,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -909,7 +1433,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.removeClass ); }
+    remove: function () { this.$el.addClass( this.options.applyClass ); }
 });
 ```
 

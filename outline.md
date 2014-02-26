@@ -1,7 +1,6 @@
-- A note about slides/vimdeck
-  - Link to slides
-
 - Intro
+  - A note about slides/vimdeck
+    - Link to slides
   - Who I am - links
     - Name
     - I work at Adobe
@@ -12,6 +11,7 @@
     - Overview
     - UI patterns: identify, and abstract
     - Decoupling HTML, CSS, and JS
+    - Previous methods: good and bad
     - Best practices for reusable Javascript
     - Disclaimer
       - Writing custom components is time-consuming
@@ -35,6 +35,9 @@
   - Simple *code* example showing separation
 
 - The JS
+  - Show example first
+  - Black box
+  - Framework-based
   - Options
     - Loads of em!
     - Behavior
