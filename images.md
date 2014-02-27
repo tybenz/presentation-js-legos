@@ -1,26 +1,25 @@
-# ![](http://awes0.me/slider.gif)
+# ![](http://localhost/aws/slider.gif)
 
 
-# ![](http://awes0.me/slider.png)
+# ![](http://localhost/aws/slider.png)
 
 
-
-# ![](http://awes0.me/colorpicker.gif)
-
-
-# ![](http://awes0.me/colorpicker.png)
+# ![](http://localhost/aws/colorpicker.gif)
 
 
-# ![](http://awes0.me/kahn-menu.gif)
+# ![](http://localhost/aws/colorpicker.png)
 
 
-# ![](http://awes0.me/kahn-menu.png)
+# ![](http://localhost/aws/kahn-menu.gif)
 
 
-# ![](http://awes0.me/radial-menu.gif)
+# ![](http://localhost/aws/kahn-menu.png)
 
 
-# ![](http://awes0.me/radial-menu1.png)
+# ![](http://localhost/aws/radial-menu.gif)
 
 
-# ![](http://awes0.me/radial-menu2.png)
+# ![](http://localhost/aws/radial-menu1.png)
+
+
+# ![](http://localhost/aws/radial-menu2.png)

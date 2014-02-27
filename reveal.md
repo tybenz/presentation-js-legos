@@ -2,6 +2,10 @@
 
 ##### REUSABLE UI PATTERNS IN JAVASCRIPT
 
+<div style="font-size: 0.5em">
+If you're here for the examples, jump to the [end](#/1000000).
+</div>
+
 
 ## TYLER BENZIGER
 
@@ -10,10 +14,19 @@ github.com/tybenz&nbsp;&nbsp;&#8226;&nbsp;&nbsp;@tybenz
 tybenz@adobe.com&nbsp;&nbsp;&#8226;&nbsp;&nbsp;tybenz.com
 
 
+# ![](https://raw.github.com/tybenz/vimdeck/master/img/demo1.png)
+
+
+# ![](https://raw.github.com/tybenz/spamthenet/gh-pages/img/logo.png)
+
+
 # ![](http://awes0.me/adobe.png)
 
 
 # ![](http://awes0.me/jquery.png)
+
+
+# WebPro
 
 
 ## WHAT WE'LL COVER
@@ -417,6 +430,375 @@ $( '.task input[type=checkbox]' ).on( 'change', function () {
     20% { opacity: 0; height: auto; margin-bottom: 10px; padding:10px; }
     100% { opacity: 0; height: 0; margin-bottom: 0px; }
 }
+```
+
+
+# EXAMPLE TIME
+
+
+# BLACK BOX
+
+
+```javascript
+$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();
+```
+
+
+```javascript
+$.fn.secret{~ = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+{~$.fn.secret = function () {
+    ~}this.on{~(~} 'mousedown'{~, function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        ~}$( this ).addClass( 'show' );{~
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });~}
+
+    this.on{~(~} 'mouseup'{~, function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        ~}$( this ).removeClass( 'show' );{~
+    });
+};
+
+$( '.secret' ).secret();~}
+```
+
+
+```javascript
+{~$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};~}
+
+$( '.secret' ).secret();
+```
+
+
+```javascript
+$.fn.secret = function () {
+    this.on( 'mousedown', function () {
+        $( this ).addClass( 'show' );
+    });
+
+    this.on( 'mouseup', function () {
+        $( this ).removeClass( 'show' );
+    });
+};
+
+$( '.secret' ).secret();
+```
+
+
+# FRAMEWORK BASED
+
+
+```javascript
+var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();
+```
+
+
+```javascript
+{~var Secret =~} Backbone.View.extend{~({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    ~}el: '.secret'{~,
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    el: '.secret',~}
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    }{~,
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        ~}this.$el.addClass( 'show' );{~
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );~}
+        this.trigger( 'apply' );{~
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        ~}this.$el.removeClass( 'show' ); {~
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        ~}this.trigger( 'remove' );{~
+    }
+});
+
+var secret = new Secret();~}
+```
+
+
+```javascript
+{~var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});~}
+
+var secret = new Secret();
+```
+
+
+```javascript
+var Secret = Backbone.View.extend({
+    el: '.secret',
+
+    events: {
+        'mousedown': 'apply',
+        'mouseup': 'remove'
+    },
+
+    apply: function () {
+        this.$el.addClass( 'show' );
+        this.trigger( 'apply' );
+    },
+
+    remove: function () {
+        this.$el.removeClass( 'show' );
+        this.trigger( 'remove' );
+    }
+});
+
+var secret = new Secret();
 ```
 
 
