@@ -14,10 +14,10 @@ github.com/tybenz&nbsp;&nbsp;&#8226;&nbsp;&nbsp;@tybenz
 tybenz@adobe.com&nbsp;&nbsp;&#8226;&nbsp;&nbsp;tybenz.com
 
 
-# ![](https://raw.github.com/tybenz/vimdeck/master/img/demo1.png)
+# [![](https://raw.github.com/tybenz/vimdeck/master/img/demo1.png)](http://github.com/tybenz/vimdeck)
 
 
-# ![](https://raw.github.com/tybenz/spamthenet/gh-pages/img/logo.png)
+# [![](https://raw.github.com/tybenz/spamthe.net/gh-pages/img/logo.png)](http://spamthe.net)
 
 
 # ![](http://awes0.me/adobe.png)
