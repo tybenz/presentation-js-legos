@@ -1185,7 +1185,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });
 ```
 
@@ -1216,7 +1216,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1247,7 +1247,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1278,7 +1278,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1309,7 +1309,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1340,7 +1340,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); }{~,
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1371,7 +1371,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1402,7 +1402,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });~}
 ```
 
@@ -1433,7 +1433,7 @@ var Secret = Lego.extend({
 
     apply: function () { this.$el.addClass( this.options.applyClass ); },
 
-    remove: function () { this.$el.addClass( this.options.applyClass ); }
+    remove: function () { this.$el.removeClass( this.options.applyClass ); }
 });
 ```
 
